@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} <!-- Thêm dòng này -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <h1>Welcome to Emotion Recognition</h1>
+    <p>This is your homepage!</p>
+    <img src="{% url 'video_feed' %}" alt="Video Stream">
+</body>
+</html>
